@@ -94,7 +94,7 @@ nav ul li a:hover {
 .title-with-logo {
     display: flex;
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: center; 
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -103,11 +103,12 @@ nav ul li a:hover {
     font-family: 'Playfair Display SC', serif;
     font-size: 30px;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .logo {
-    width: 50px;  
+    width: 80px;  
     height: auto;
     margin-left: 20px;  
 }
