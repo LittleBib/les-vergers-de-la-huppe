@@ -20,3 +20,26 @@ p {
     font-size: 18px;
     color: #333;
 }
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuste la hauteur selon ton image */
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Permet à l'image de couvrir toute la zone sans déformation */
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.header-logo img {
+    width: 100px; /* Taille du logo, ajuste selon besoin */
+    height: auto;
+}
