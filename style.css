@@ -140,3 +140,30 @@ details p {
     margin-top: 10px;
     font-size: 16px;
 }
+.points-de-vente-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.points-de-vente {
+    flex: 1;
+    max-width: 50%;
+}
+
+.points-de-vente-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.points-de-vente-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
