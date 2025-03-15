@@ -275,16 +275,6 @@ details p {
     color: #333;
     margin-bottom: 20px;
 }
-header {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-    max-width: 200px;
-}
 #engagements {
     padding: 40px 20px;
     text-align: center;
