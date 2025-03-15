@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 .image-container img {
     max-width: 600px;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
     border-radius: 8px;
 }
