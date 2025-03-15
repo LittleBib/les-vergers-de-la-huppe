@@ -23,14 +23,14 @@ p {
 .header {
     position: relative;
     width: 100%;
-    height: 400px; /* Ajuste la hauteur selon ton image */
+    height: 400px; 
     overflow: hidden;
 }
 
 .header-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Permet à l'image de couvrir toute la zone sans déformation */
+    object-fit: cover;
 }
 
 .header-logo {
@@ -40,6 +40,6 @@ p {
 }
 
 .header-logo img {
-    width: 100px; /* Taille du logo, ajuste selon besoin */
+    width: 100px;
     height: auto;
 }
