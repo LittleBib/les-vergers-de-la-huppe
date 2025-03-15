@@ -91,3 +91,23 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 8px;
 }
+.title-with-logo {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.logo-title {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.logo {
+    width: 50px;  
+    height: auto;
+    margin-left: 20px;  
+}
