@@ -275,28 +275,6 @@ details p {
     color: #333;
     margin-bottom: 20px;
 }
-#engagements {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fff;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#engagements h2 {
-    font-size: 32px;
-    color: #6A4C93;
-    margin-bottom: 20px;
-}
-
-#engagements p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
 
 .engagement {
     margin-bottom: 30px;
