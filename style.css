@@ -484,7 +484,7 @@ footer p {
     border-radius: 10px;
     text-align: center;
 }
-.nos-produits .nos-produits-image {
+.nos-produits-image {
     width: 200%; 
     max-width: 200px;
     height: auto;
