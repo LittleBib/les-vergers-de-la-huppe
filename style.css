@@ -375,6 +375,49 @@ details p {
 .btn:hover {
     background-color: #A52A56;
 }
+.perspectives-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.perspective-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.perspective-item {
+    margin-bottom: 20px;
+}
+
+.perspective-item h3 {
+    font-size: 24px;
+    color: #5E1B3E;
+    font-weight: 700;
+}
+
+.perspective-item p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
 footer {
     text-align: center;
     padding: 10px 0;
