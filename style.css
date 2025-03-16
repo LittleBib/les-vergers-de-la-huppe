@@ -226,7 +226,7 @@ details p {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #568203;
+    background-color: #F04E78;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -234,7 +234,7 @@ details p {
 }
 
 .accueil-engagements .btn:hover {
-    background-color: #456602;
+    background-color: #d90953;
 }
 
 .title-container {
