@@ -508,7 +508,7 @@ footer p {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Permet de gérer l'alignement sur les petits écrans */
+    flex-wrap: wrap;
 }
 
 .nos-variete-item {
@@ -521,7 +521,7 @@ footer p {
 
 .nos-variete-image {
     width: 100%;
-    max-width: 200px; /* Limite la taille des images pour garder une bonne structure */
+    max-width: 200px; 
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
