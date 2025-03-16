@@ -355,14 +355,16 @@ details p {
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #FFD1DV;
+    background-color: #F04E78;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 14px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
+    width: 200px;
+    text-align: center;
 }
 
 .infographic-btn:hover .infographic-text {
