@@ -481,17 +481,15 @@ footer p {
 .content-container {
     flex: 1;
     padding: 20px;
-    background-color: #E6F2E6;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nos-produits-item h3 {
     color: #5E1B3E;
 }
 
-.nos-produits-image {
+.nos-produits .nos-produits-image {
     width: 100%; 
     max-width: 300px;
     height: auto;
@@ -505,7 +503,7 @@ footer p {
         align-items: center;
     }
 
-    .content-container {
+ .content-container {
         width: 90%;
     }
 }
