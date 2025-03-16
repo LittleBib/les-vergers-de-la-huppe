@@ -170,15 +170,13 @@ details p {
 
 .professeurs {
     display: flex;
-    justify-content: center-top;
-    align-items: center;
+    justify-content: center;
     gap: 30px;
     margin: 50px auto;
     text-align: center;
-    max-width: 1200px;
 }
-.content-left,
-.content-right {
+.professeurs .content-left,
+.professeurs .content-right {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
@@ -200,9 +198,32 @@ details p {
 .contact-info p {
     font-size: 18px;
     margin: 5px 0;
-}.qui-sommes-nous {
-    margin-top: 50px;
+}
+.qui-sommes-nous {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.qui-sommes-nous .content-left {
+    flex: 1;
     padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+}
+
+.qui-sommes-nous .content-right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+}
+
+.qui-sommes-nous .content-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 .accueil-engagements {
     background-color: #C3E6CB;
