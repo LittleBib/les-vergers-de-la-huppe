@@ -170,7 +170,7 @@ details p {
 
 .professeurs {
     display: flex;
-    justify-content: center;
+    justify-content: center-top;
     align-items: center;
     gap: 30px;
     margin: 50px auto;
