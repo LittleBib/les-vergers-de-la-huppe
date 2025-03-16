@@ -78,7 +78,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #A52A56; 
 }
-.image-container {
+#index-image-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -86,7 +86,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.image-container img {
+#index-image-container img {
     max-width: 600px;
     height: 600px;
     object-fit: cover;
