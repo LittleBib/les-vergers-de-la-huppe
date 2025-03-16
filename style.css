@@ -484,13 +484,8 @@ footer p {
     border-radius: 10px;
     text-align: center;
 }
-
-.nos-produits-item h3 {
-    color: #5E1B3E;
-}
-
 .nos-produits .nos-produits-image {
-    width: 100%; 
+    width: 200%; 
     max-width: 200px;
     height: auto;
     border-radius: 10px;
