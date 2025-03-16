@@ -430,9 +430,46 @@ details p {
 }
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 40px 20px;
     background-color: #C3E6CB;
-    color: white;
+    color: #333;
     margin-top: 40px;
 }
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-details a {
+    color: #5E1B3E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-details a:hover {
+    color: #F04E78;
+    text-decoration: underline;
+}
+
+.footer-details strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer-details p {
+        font-size: 14px;
+    }
+}
+
 
