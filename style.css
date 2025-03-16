@@ -384,18 +384,18 @@ details p {
     text-align: center;
 }
 
-.content-container {
+.perspectives .content-container {
     flex: 1;
     max-width: 500px;
     text-align: left;
 }
 
-.content-container.left {
+.perspective .content-container.left {
     margin-right: 20px;
     text-align: center;
 }
 
-.content-container.right {
+.perspective .content-container.right {
     margin-left: 20px;
     text-align: center;
 }
