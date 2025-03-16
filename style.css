@@ -377,30 +377,24 @@ details p {
 }
 .perspectives-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
-    flex-wrap: wrap;
     align-items: center;
-    margin-top: 40px;
-}
-
-.image-container {
-    flex: 1;
-    max-width: 500px;
-    margin-right: 20px;
-}
-
-.perspective-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
 }
 
 .content-container {
     flex: 1;
-    max-width: 600px;
+    max-width: 500px;
     text-align: left;
+}
+
+.content-container.left {
+    margin-right: 20px;
+}
+
+.content-container.right {
+    margin-left: 20px;
 }
 
 .perspective-item {
@@ -417,6 +411,19 @@ details p {
     font-size: 18px;
     color: #333;
     line-height: 1.6;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.perspective-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 footer {
     text-align: center;
