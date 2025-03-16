@@ -321,7 +321,8 @@ details p {
 
 .engagement-box img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -354,7 +355,7 @@ details p {
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #F04E78;
+    background-color: #FFD1DV;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
