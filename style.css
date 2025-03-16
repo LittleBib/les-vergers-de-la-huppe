@@ -333,7 +333,7 @@ details p {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #568203;
+    background-color: #F04E78;
     color: #fff;
     border-radius: 5px;
     font-weight: bold;
@@ -342,7 +342,7 @@ details p {
 }
 
 .infographic-btn:hover {
-    background-color: #456602;
+    background-color: #d90953;
 }
 
 .infographic-text {
@@ -350,7 +350,7 @@ details p {
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #F04E78;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
@@ -366,7 +366,7 @@ details p {
 }
 
 .btn:hover {
-    background-color: #456602;
+    background-color: #d90953;
 }
 footer {
     text-align: center;
