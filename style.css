@@ -22,6 +22,7 @@ h2 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #5E1B3E;
 }
 
 
@@ -191,7 +192,7 @@ details p {
 }
 
 .contact-info {
-    background-color: #f0f0f0;
+    background-color: #C3E6CB;
     padding: 20px;
     margin-top: 30px;
     text-align: center;
