@@ -266,12 +266,6 @@ details p {
     height: auto;
 }
 
-.title-container h2 {
-    font-size: 30px;
-    font-family: 'Playfair Display SC';
-    color: #5E1B3E;;
-}
-
 .content-container {
     display: flex;
     justify-content: space-between;
