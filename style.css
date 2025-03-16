@@ -121,7 +121,7 @@ nav ul li a:hover {
 }
 
 details {
-    background: #f8e8e8;
+    background: #C3E6CB;
     padding: 10px;
     margin: 10px 0;
     border-radius: 8px;
@@ -135,7 +135,7 @@ summary {
 }
 
 summary:hover {
-    color: #C3E6CB;
+    color: #B7D3A8;
 }
 
 details p {
@@ -210,7 +210,7 @@ details p {
     padding: 20px;
 }
 .accueil-engagements {
-    background-color: #f8f8f8;
+    background-color: #C3E6CB;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -365,7 +365,7 @@ details p {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #6A4C93;
+    background-color: #C3E6CB;
     color: white;
     margin-top: 40px;
 }
