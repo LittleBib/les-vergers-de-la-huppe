@@ -381,6 +381,7 @@ details p {
     gap: 40px;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .content-container {
@@ -391,10 +392,12 @@ details p {
 
 .content-container.left {
     margin-right: 20px;
+    text-align: center;
 }
 
 .content-container.right {
     margin-left: 20px;
+    text-align: center;
 }
 
 .perspective-item {
