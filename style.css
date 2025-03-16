@@ -172,23 +172,19 @@ details p {
 
 .professeurs {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 50px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+    text-align: center;
+    max-width: 1200px;
 }
-
 .content-left,
 .content-right {
     flex: 1;
-    padding: 10px;
-}
-
-.content-left h3,
-.content-right h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color:#5E1B3E;;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 500px; 
 }
 
 .contact-info {
