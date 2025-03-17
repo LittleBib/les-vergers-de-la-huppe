@@ -310,6 +310,7 @@ details p {
         height: auto; /* Conserve les proportions */
         display: block; /* Évite les marges indésirables */
         margin: 0 auto; /* Centre l’image */
+       align-items: center;
     }
 }
 
