@@ -58,15 +58,13 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 20px;
-    text-align: center;
     display: flex;
-    justify-content: center; /* Centrer les éléments horizontalement */
-    flex-wrap: wrap; /* Permet de passer à la ligne suivante si besoin */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement entre les éléments */
 }
 
 nav ul li {
-    margin-right: 20px;
-    margin-bottom: 10px; /* Un petit espace en bas des éléments */
+    margin: 0; /* On enlève les marges inutiles sur les éléments */
 }
 
 nav ul li a {
@@ -87,27 +85,26 @@ nav ul li a:hover {
 /* Pour les petits écrans (téléphone) */
 @media (max-width: 600px) {
     nav ul {
+        display: flex;
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center; /* Centre les éléments */
         padding: 0;
         margin: 10px;
-        display: block;  /* Mettre les éléments en bloc pour les empiler */
-        text-align: left;  /* Aligner à gauche pour plus de clarté */
     }
 
     nav ul li {
-        display: block; /* Les éléments prennent toute la largeur disponible */
-        margin-right: 0; /* Enlever l'espacement horizontal */
-        width: 100%; /* S'assurer que chaque élément occupe la largeur entière */
+        width: 100%; /* Chaque élément prend toute la largeur disponible */
+        margin-bottom: 10px; /* Un peu d'espace entre chaque élément */
+        text-align: center; /* Centrer le texte */
     }
 
     nav ul li a {
-        width: 100%; /* Les liens occupent toute la largeur de l'élément */
+        width: 100%; /* S'assurer que le lien occupe toute la largeur du li */
+        padding: 15px 0; /* Ajuster le padding pour l'affichage mobile */
         text-align: center; /* Centrer le texte à l'intérieur du lien */
-        padding: 15px 0; /* Augmenter l'espace autour du texte */
     }
 }
 
-
-}
 #index-image-container {
     display: flex;
     justify-content: space-between;
