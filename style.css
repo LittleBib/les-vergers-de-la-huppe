@@ -93,15 +93,16 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        width: 100%; /* Chaque élément prend toute la largeur disponible */
-        margin-bottom: 10px; /* Un peu d'espace entre chaque élément */
-        text-align: center; /* Centrer le texte */
+        width: 80%; /* Réduit la largeur des éléments pour les rendre plus esthétiques */
+        margin-bottom: 20px; /* Plus d'espace entre chaque élément */
+        text-align: center; /* Centrer le texte dans chaque bouton */
     }
 
     nav ul li a {
-        width: 100%; /* S'assurer que le lien occupe toute la largeur du li */
-        padding: 15px 0; /* Ajuster le padding pour l'affichage mobile */
+        width: 100%; /* Les liens occupent toute la largeur de l'élément */
+        padding: 15px 0; /* Un padding plus grand pour rendre les boutons plus visibles */
         text-align: center; /* Centrer le texte à l'intérieur du lien */
+        border-radius: 10px; /* Bord arrondi plus prononcé pour un effet plus doux */
     }
 }
 
