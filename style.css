@@ -283,6 +283,7 @@ details p {
     display: flex;
     flex-direction: column; /* Force les paragraphes à être en colonne */
     justify-content: center; /* Centre verticalement les paragraphes */
+    text-align: center;
 }
 
 #bloc-qui-sommes-nous .content-right {
@@ -290,7 +291,6 @@ details p {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 /* Mode responsive : une colonne sous l'autre */
