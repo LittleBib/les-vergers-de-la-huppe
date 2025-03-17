@@ -27,13 +27,27 @@
 
     <section id="contact">
         <h2>Contactez-nous</h2>
-        <p>Vous avez une question ou souhaitez nous contacter ? N'hésitez pas à nous envoyer un message via ce formulaire ou par téléphone.</p>
+        <p>Pour plus de renseignements, vous pouvez nous appeler directement au <strong>07 45 21 99 66</strong> ou <strong>07 81 77 03 92</strong>, ou utiliser le formulaire ci-dessous.</p>
+        
         <form action="#" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required placeholder="Votre nom">
+            <label for="name">Nom et prénom :</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom et prénom">
 
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required placeholder="Votre adresse email">
+
+            <fieldset>
+                <legend>Vous préférez être contacté par :</legend>
+                <label>
+                    <input type="radio" name="contact_pref" value="email" checked> Email
+                </label>
+                <label>
+                    <input type="radio" name="contact_pref" value="telephone"> Téléphone
+                </label>
+            </fieldset>
+
+            <label for="phone">Téléphone (optionnel) :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
 
             <label for="message">Message :</label>
             <textarea id="message" name="message" required placeholder="Votre message"></textarea>
@@ -54,3 +68,4 @@
     </footer>
 </body>
 </html>
+
