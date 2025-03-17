@@ -489,11 +489,11 @@ details p {
     max-width: 500px;
     text-align: center;
 }
-.perspectives-container .content-container.left {
+.perspectives-container .content-container-left {
     margin-right: 20px;
     text-align: center;
 }
-.perspectives-container .content-container.right {
+.perspectives-container .content-container-right {
     margin-left: 20px;
     text-align: center;
 }
