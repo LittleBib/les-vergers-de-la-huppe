@@ -703,7 +703,7 @@ label {
 
 
 .contact-button {
-    background-color: #E63946;
+    background-color: #F04E78;
     color: white;
     font-size: 1.1em;
     padding: 12px;
@@ -715,7 +715,7 @@ label {
 }
 
 .contact-button:hover {
-    background-color: #C7323E;
+    background-color: #A52A56;
 }
 
 /* --- Responsive Design --- */
