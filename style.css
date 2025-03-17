@@ -290,6 +290,7 @@ details p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* Mode responsive : une colonne sous l'autre */
