@@ -272,32 +272,49 @@ details p {
     font-size: 18px;
     margin: 5px 0;
 }
-.qui-sommes-nous {
+#bloc-qui-sommes-nous {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espacement entre les colonnes */
+    width: 100%;
+}
+
+/* Styles pour la colonne gauche (texte) */
+#bloc-qui-sommes-nous .content-left {
+    width: 50%;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 50px auto;
+    align-items: center;
+    text-align: center; /* Centrage du texte */
 }
 
-.qui-sommes-nous .content-left {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 600px;
+/* Styles pour la colonne droite (image) */
+#bloc-qui-sommes-nous .content-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.qui-sommes-nous .content-right {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 600px;
-}
-
-.qui-sommes-nous .content-right img {
-    width: 100%;
+#bloc-qui-sommes-nous .content-right img {
+    max-width: 100%; /* Pour éviter le dépassement */
     height: auto;
-    border-radius: 8px;
 }
+
+/* Responsiveness : passage en colonne sur mobile */
+@media (max-width: 768px) {
+    #bloc-qui-sommes-nous {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #bloc-qui-sommes-nous .content-left, 
+    #bloc-qui-sommes-nous .content-right {
+        width: 100%; /* Pleine largeur */
+    }
+}
+
 .accueil-engagements {
     background-color: #C3E6CB;
     padding: 20px;
