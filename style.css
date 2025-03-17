@@ -272,45 +272,43 @@ details p {
     font-size: 18px;
     margin: 5px 0;
 }
-.qui-sommes-nous {
+#bloc-qui-sommes-nous {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Pour séparer le texte et l’image */
+    align-items: center; /* Centrage vertical */
+}
+
+#bloc-qui-sommes-nous .content-left {
+    flex: 1; /* Prend 50% de l’espace */
+    display: flex;
+    flex-direction: column; /* Force les paragraphes à être en colonne */
+    justify-content: center; /* Centre verticalement les paragraphes */
+}
+
+#bloc-qui-sommes-nous .content-right {
+    flex: 1; /* Prend 50% de l’espace */
+    display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 50px auto;
+    align-items: center;
 }
 
-.qui-sommes-nous .content-left,
-.qui-sommes-nous .content-right {
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%; /* Par défaut, chaque div prend toute la largeur sur mobile */
-}
-
-.qui-sommes-nous .content-left {
-    max-width: 600px;
-}
-
-.qui-sommes-nous .content-right {
-    max-width: 600px;
-}
-
-.qui-sommes-nous .content-right img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Pour les écrans de bureau (plus de 768px), on met les deux sections côte à côte */
-@media screen and (min-width: 768px) {
-    .qui-sommes-nous {
-        flex-wrap: nowrap;
+/* Mode responsive : une colonne sous l'autre */
+@media screen and (max-width: 768px) {
+    #bloc-qui-sommes-nous {
+        flex-direction: column;
     }
 
-    .qui-sommes-nous .content-left,
-    .qui-sommes-nous .content-right {
-        width: 50%; /* Les deux divs occupent la moitié de la largeur */
+    #bloc-qui-sommes-nous .content-left,
+    #bloc-qui-sommes-nous .content-right {
+        width: 100%; /* Occuper toute la largeur */
+        text-align: center; /* Centrer le texte sur mobile */
     }
+    #bloc-qui-sommes-nous .content-right img {
+        max-width: 100%; /* Empêche le dépassement */
+        height: auto; /* Conserve les proportions */
+        display: block; /* Évite les marges indésirables */
+        margin: 0 auto; /* Centre l’image */
+}
 }
 
 .accueil-engagements {
