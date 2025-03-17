@@ -461,6 +461,18 @@ details p {
 .btn:hover {
     background-color: #A52A56;
 }
+@media screen and (max-width: 768px) {
+    .engagements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .engagement-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
 .perspectives-container {
     display: flex;
     justify-content: space-around;
