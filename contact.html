@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="site-header">
         <div class="header-logo">
             <img src="img/Logo detouré.png" alt="Logo Les Vergers de la Huppe" title="Les Vergers de la Huppe">
         </div>
-        <img class="header-image" src="img/Vajolet image d'en tete.png" alt="Image de framboises Vajolet en en-tête">
+        <img class="header-banner" src="img/Vajolet image d'en tete.png" alt="Image de framboises Vajolet en en-tête">
     </header>
 
-    <nav class="nav">
+    <nav class="site-navigation">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="engagements.html">Nos engagements</a></li>
@@ -25,38 +25,41 @@
         </ul>
     </nav>
 
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Pour plus de renseignements, vous pouvez nous appeler directement au <strong>07 45 21 99 66</strong> ou <strong>07 81 77 03 92</strong>, ou utiliser le formulaire ci-dessous.</p>
+    <section id="contact-section">
+        <h2 class="contact-title">Contactez-nous</h2>
+        <p class="contact-intro">
+            Pour plus de renseignements, vous pouvez nous appeler directement au <strong>07 45 21 99 66</strong> ou <strong>07 81 77 03 92</strong>, 
+            ou utiliser le formulaire ci-dessous.
+        </p>
         
-        <form action="#" method="post">
-            <label for="name">Nom et prénom :</label>
-            <input type="text" id="name" name="name" required placeholder="Votre nom et prénom">
+        <form action="#" method="post" class="contact-form">
+            <label for="contact-name">Nom et prénom :</label>
+            <input type="text" id="contact-name" name="contact-name" class="contact-input" required placeholder="Votre nom et prénom">
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required placeholder="Votre adresse email">
+            <label for="contact-email">Email :</label>
+            <input type="email" id="contact-email" name="contact-email" class="contact-input" required placeholder="Votre adresse email">
 
-            <fieldset>
+            <fieldset class="contact-fieldset">
                 <legend>Vous préférez être contacté par :</legend>
-                <label>
-                    <input type="radio" name="contact_pref" value="email" checked> Email
+                <label class="contact-radio-label">
+                    <input type="radio" name="contact-preference" value="email" checked class="contact-radio"> Email
                 </label>
-                <label>
-                    <input type="radio" name="contact_pref" value="telephone"> Téléphone
+                <label class="contact-radio-label">
+                    <input type="radio" name="contact-preference" value="telephone" class="contact-radio"> Téléphone
                 </label>
             </fieldset>
 
-            <label for="phone">Téléphone (optionnel) :</label>
-            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+            <label for="contact-phone">Téléphone (optionnel) :</label>
+            <input type="tel" id="contact-phone" name="contact-phone" class="contact-input" placeholder="Votre numéro de téléphone">
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+            <label for="contact-message">Message :</label>
+            <textarea id="contact-message" name="contact-message" class="contact-textarea" required placeholder="Votre message"></textarea>
 
-            <button type="submit">Envoyer</button>
+            <button type="submit" class="contact-button">Envoyer</button>
         </form>
     </section>
 
-    <footer>
+    <footer class="site-footer">
         <div class="footer-content">
             <p>&copy; 2025 Les Vergers de la Huppe</p>
             <div class="footer-details">
@@ -68,4 +71,3 @@
     </footer>
 </body>
 </html>
-
