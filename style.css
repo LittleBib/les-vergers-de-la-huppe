@@ -305,22 +305,20 @@ details p {
     .qui-sommes-nous .content-right {
         max-width: 100%;  /* Les sections prennent toute la largeur */
         padding: 10px;  /* Réduit l'espace intérieur pour les petits écrans */
+        flex: 1 1 100%;  /* Permet aux éléments de prendre toute la largeur disponible */
     }
 
-    /* Ajout pour empiler le texte et l'image dans .content-left */
     .qui-sommes-nous .content-left p {
         margin-bottom: 20px;  /* Ajoute un espacement sous le paragraphe */
     }
 
     .qui-sommes-nous .content-right img {
-        max-width: 100%;
+        width: 100%;  /* Assure que l'image prend toute la largeur disponible */
         height: auto;
-        display: block;  /* S'assure que l'image est un bloc (sur sa propre ligne) */
+        display: block;  /* Affiche l'image en bloc, en dessous du texte */
         margin-top: 20px;  /* Ajoute un espacement au-dessus de l'image */
     }
 }
-
-
 .accueil-engagements {
     background-color: #C3E6CB;
     padding: 20px;
