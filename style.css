@@ -52,6 +52,20 @@ p {
     width: 300px;
     height: auto;
 }
+/* Pour les petits écrans (téléphone) */
+@media (max-width: 600px) {
+    /* Masquer l'image d'en-tête sur les petits écrans */
+    .header-image {
+        display: none; /* Cacher l'image d'en-tête */
+    }
+
+    /* Réduire la taille du logo sur les petits écrans */
+    .header-logo img {
+        width: 150px; /* Taille réduite du logo (ajuste à ta convenance) */
+        height: auto; /* Maintient les proportions du logo */
+    }
+}
+
 
 /* Menu des écrans larges */
 nav ul {
