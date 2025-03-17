@@ -53,17 +53,22 @@ p {
     height: auto;
 }
 
+/* Menu des écrans larges */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si besoin */
 }
 
 nav ul li {
-    display: inline-block;
     margin-right: 20px;
+    margin-bottom: 10px; /* Un petit espace en bas des éléments */
 }
+
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -73,26 +78,34 @@ nav ul li a {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
+/* Menu des écrans larges : au survol */
 nav ul li a:hover {
     background-color: #A52A56;
 }
+
+/* Pour les petits écrans (téléphone) */
 @media (max-width: 600px) {
     nav ul {
         padding: 0;
         margin: 10px;
+        display: block;  /* Mettre les éléments en bloc pour les empiler */
+        text-align: left;  /* Aligner à gauche pour plus de clarté */
     }
 
     nav ul li {
-        display: block;  
-        margin-bottom: 10px;  
+        display: block; /* Les éléments prennent toute la largeur disponible */
+        margin-right: 0; /* Enlever l'espacement horizontal */
+        width: 100%; /* S'assurer que chaque élément occupe la largeur entière */
     }
 
     nav ul li a {
-        width: 100%; 
-        text-align: center;  
-        padding: 15px 0;  
+        width: 100%; /* Les liens occupent toute la largeur de l'élément */
+        text-align: center; /* Centrer le texte à l'intérieur du lien */
+        padding: 15px 0; /* Augmenter l'espace autour du texte */
     }
 }
+
 
 }
 #index-image-container {
