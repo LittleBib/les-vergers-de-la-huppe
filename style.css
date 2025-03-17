@@ -136,13 +136,15 @@ nav ul li a:hover {
     gap: 20px;
     margin-top: 30px;
     flex-wrap: wrap;
+    align-items: center;  /* Aligne les images sur l'axe vertical */
 }
 
 #index-image-container img {
-    max-width: 600px;
-    height: 600px;
+    max-width: 100%;  /* Permet aux images de s'adapter à la taille du container */
+    height: auto;  /* Laisse l'image conserver son ratio d'origine */
     object-fit: cover;
     border-radius: 8px;
+    flex: 1 1 200px;  /* S'adapte en fonction de la taille du container */
 }
 .title-with-logo {
     display: flex;
