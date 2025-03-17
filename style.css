@@ -272,49 +272,46 @@ details p {
     font-size: 18px;
     margin: 5px 0;
 }
-#bloc-qui-sommes-nous {
+.qui-sommes-nous {
     display: flex;
-    justify-content: space-between; /* Pour séparer le texte et l’image */
-    align-items: center; /* Centrage vertical */
-}
-
-#bloc-qui-sommes-nous .content-left {
-    flex: 1; /* Prend 50% de l’espace */
-    display: flex;
-    flex-direction: column; /* Force les paragraphes à être en colonne */
-    justify-content: center; /* Centre verticalement les paragraphes */
-    text-align: center;
-}
-
-#bloc-qui-sommes-nous .content-right {
-    flex: 1; /* Prend 50% de l’espace */
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
 }
 
-/* Mode responsive : une colonne sous l'autre */
-@media screen and (max-width: 768px) {
-    #bloc-qui-sommes-nous {
-        flex-direction: column;
-    }
-
-    #bloc-qui-sommes-nous .content-left,
-    #bloc-qui-sommes-nous .content-right {
-        width: 100%; /* Occuper toute la largeur */
-        text-align: center; /* Centrer le texte sur mobile */
-    }
- @media screen and (max-width: 768px) {
-    #bloc-qui-sommes-nous .content-right img {
-        max-width: 100%; /* Empêche le dépassement */
-        height: auto; /* Conserve les proportions */
-        display: block; /* Évite les marges indésirables */
-        margin: 0 auto; /* Centre l’image */
-       align-items: center;
-    }
+.qui-sommes-nous .content-left,
+.qui-sommes-nous .content-right {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Par défaut, chaque div prend toute la largeur sur mobile */
 }
 
+.qui-sommes-nous .content-left {
+    max-width: 600px;
+}
 
+.qui-sommes-nous .content-right {
+    max-width: 600px;
+}
+
+.qui-sommes-nous .content-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Pour les écrans de bureau (plus de 768px), on met les deux sections côte à côte */
+@media screen and (min-width: 768px) {
+    .qui-sommes-nous {
+        flex-wrap: nowrap;
+    }
+
+    .qui-sommes-nous .content-left,
+    .qui-sommes-nous .content-right {
+        width: 50%; /* Les deux divs occupent la moitié de la largeur */
+    }
+}
 
 .accueil-engagements {
     background-color: #C3E6CB;
@@ -404,7 +401,7 @@ details p {
     width: 30%;
     box-sizing: border-box;
     padding: 20px;
-    background-color: #C3E6CB;
+    background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -466,15 +463,6 @@ details p {
 .btn:hover {
     background-color: #A52A56;
 }
-@media screen and (max-width: 768px) {
-    .engagements-container {
-        flex-direction: column;
-        align-items: center;
-    }
- .engagement-box {
-        width: 90%;
-        margin-bottom: 20px;
-    }
 .perspectives-container {
     display: flex;
     justify-content: space-around;
@@ -503,6 +491,19 @@ details p {
 .perspective-item {
     margin-bottom: 20px;
 }
+
+.perspective-item h3 {
+    font-size: 24px;
+    color: #5E1B3E;
+    font-weight: 700;
+}
+
+.perspective-item p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
 .perspectives-image-container {
     flex: 1;
     max-width: 500px;
@@ -515,7 +516,6 @@ details p {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 footer {
     text-align: center;
     padding: 40px 20px;
