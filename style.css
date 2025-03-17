@@ -312,7 +312,17 @@ details p {
         width: 50%; /* Les deux divs occupent la moitié de la largeur */
     }
 }
+/* Pour les écrans plus petits (moins de 768px), on empile les colonnes les unes sous les autres */
+@media screen and (max-width: 768px) {
+    .qui-sommes-nous {
+        flex-wrap: wrap; /* Permet de passer les colonnes en mode empilé sur mobile */
+    }
 
+    .qui-sommes-nous .content-left,
+    .qui-sommes-nous .content-right {
+        width: 100%; /* Les deux divs prennent toute la largeur sur mobile */
+    }
+}
 .accueil-engagements {
     background-color: #C3E6CB;
     padding: 20px;
