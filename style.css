@@ -304,6 +304,15 @@ details p {
         width: 100%; /* Occuper toute la largeur */
         text-align: center; /* Centrer le texte sur mobile */
     }
+ @media screen and (max-width: 768px) {
+    #bloc-qui-sommes-nous .content-right img {
+        max-width: 100%; /* Empêche le dépassement */
+        height: auto; /* Conserve les proportions */
+        display: block; /* Évite les marges indésirables */
+        margin: 0 auto; /* Centre l’image */
+    }
+}
+
 }
 
 
