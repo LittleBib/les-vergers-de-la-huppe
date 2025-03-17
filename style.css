@@ -60,9 +60,15 @@ p {
     }
 
     /* Réduire la taille du logo sur les petits écrans */
-    .header-logo img {
+   .header-logo img {
         width: 150px; /* Taille réduite du logo (ajuste à ta convenance) */
         height: auto; /* Maintient les proportions du logo */
+        margin-bottom: 10px; /* Ajoute un peu d'espace sous le logo */
+    }
+
+    /* Réduire la marge du header pour éviter l'espace vide */
+    .header {
+        margin-bottom: 0; /* Enlève la marge sous le header */
     }
 }
 
@@ -102,8 +108,9 @@ nav ul li a:hover {
         flex-direction: column; 
         align-items: center; 
         padding: 0;
-        margin: 10px;
+        margin: 0;
         gap: 20px;
+        margin-top: 0;
     }
 
     nav ul li {
