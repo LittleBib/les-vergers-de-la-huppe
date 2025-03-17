@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display SC', serif;
     font-weight: 700;
 }
@@ -29,34 +29,36 @@ p {
     color: #333;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Assure que le logo et l'image sont alignés verticalement */
+    position: relative;
     width: 100%;
-    height: auto; /* La hauteur s'adapte au contenu */
+    height: 400px; 
     overflow: hidden;
-    padding: 20px 40px; /* Ajoute un peu de padding autour du contenu */
-}
-
-.header-logo img {
-    width: 150px; /* Ajuste la taille du logo à 150px, ajuste selon ton besoin */
-    height: auto;
 }
 
 .header-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: bottom center;
-    opacity: 0.5; /* Optionnel pour assombrir légèrement l'image */
 }
 
-/* Pour les petits écrans */
-@media (max-width: 600px) {
-    .header-logo img {
-        width: 100px; /* Réduit la taille du logo pour les petits écrans */
-    }
+.header-logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
+
+.header-logo img {
+    width: 300px;
+    height: auto;
+}
+/* Pour les petits écrans (téléphone) */
+@media (max-width: 600px) {
+    /* Masquer l'image d'en-tête sur les petits écrans */
+    .header-image {
+        display: none; /* Cacher l'image d'en-tête */
+    }
+
     /* Réduire la taille du logo sur les petits écrans */
    .header-logo img {
         width: 150px; /* Taille réduite du logo (ajuste à ta convenance) */
@@ -667,5 +669,3 @@ label {
         padding: 15px;
     }
 }
-
-
