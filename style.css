@@ -65,18 +65,41 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Menu des écrans larges */
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     padding: 10px;
-    background-color: #F04E78; 
+    background-color: #F04E78;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
+/* Menu des écrans larges : au survol */
 nav ul li a:hover {
-    background-color: #A52A56; 
+    background-color: #A52A56;
+}
+
+/* Pour les petits écrans (téléphone) */
+@media (max-width: 600px) {
+    nav ul {
+        padding: 0;
+        margin: 10px;
+    }
+
+    nav ul li {
+        display: block;  /* Les éléments de menu s'empilent verticalement */
+        margin-bottom: 10px;  /* Un peu d'espace entre les liens */
+    }
+
+    nav ul li a {
+        width: 100%;  /* Pour que les liens occupent toute la largeur */
+        text-align: center;  /* Centrer le texte */
+        padding: 15px 0;  /* Ajuste l'espace autour du texte */
+    }
+}
+
 }
 #index-image-container {
     display: flex;
