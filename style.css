@@ -59,12 +59,12 @@ nav ul {
     padding: 0;
     margin: 20px;
     display: flex;
-    justify-content: center; /* Centre les éléments horizontalement */
-    gap: 20px; /* Espacement entre les éléments */
+    justify-content: center; 
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0; /* On enlève les marges inutiles sur les éléments */
+    margin: 0;
 }
 
 nav ul li a {
@@ -77,7 +77,6 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-/* Menu des écrans larges : au survol */
 nav ul li a:hover {
     background-color: #A52A56;
 }
@@ -86,23 +85,24 @@ nav ul li a:hover {
 @media (max-width: 600px) {
     nav ul {
         display: flex;
-        flex-direction: column; /* Empile les éléments verticalement */
-        align-items: center; /* Centre les éléments */
+        flex-direction: column; 
+        align-items: center; 
         padding: 0;
         margin: 10px;
+        gap: 20px;
     }
 
     nav ul li {
-        width: 80%; /* Réduit la largeur des éléments pour les rendre plus esthétiques */
-        margin-bottom: 20px; /* Plus d'espace entre chaque élément */
-        text-align: center; /* Centrer le texte dans chaque bouton */
+        width: 80%; 
+        margin-bottom: 20px; 
+        text-align: center; 
     }
 
     nav ul li a {
-        width: 100%; /* Les liens occupent toute la largeur de l'élément */
-        padding: 15px 0; /* Un padding plus grand pour rendre les boutons plus visibles */
-        text-align: center; /* Centrer le texte à l'intérieur du lien */
-        border-radius: 10px; /* Bord arrondi plus prononcé pour un effet plus doux */
+        width: 100%; 
+        padding: 15px 0; 
+        text-align: center; 
+        border-radius: 10px; 
     }
 }
 
