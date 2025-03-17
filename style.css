@@ -501,7 +501,7 @@ details p {
     margin-bottom: 20px;
 }
 .perspectives-image-container {
-    flex: 1;
+    flex-basis: 45%;
     max-width: 100%;
     margin: 0 20px;
 }
